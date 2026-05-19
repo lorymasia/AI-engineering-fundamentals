@@ -20,10 +20,13 @@ client = anthropic.Anthropic()
 nome = input("Come ti chiami? ")
 
 # 2. TODO: crea il messaggio usando il nome
-# messaggio = f"..."
+messaggio = f"Ciao {nome}"  # ← usa f-string con la variabile nome
 
 # 3. TODO: chiama l'API
-# response = client.messages.create(...)
+risposta = chiedi_claude(domanda_test, system=system_rima)
 
 # 4. TODO: stampa la risposta in modo carino
-# print(...)
+print(messaggio)
+print(risposta)
+
+
